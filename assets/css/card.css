@@ -1,0 +1,70 @@
+.cardEmpty{
+    /* background-color: white; */
+    margin: 60px 0px;
+    display: none;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+
+}
+.cardEmpty .block{
+    width: 100%;
+    text-align: center; 
+    font-size: 14px;
+}
+.cardEmpty .ti{
+    font-size: 80px;
+    color: red;
+    margin-top: 30px;
+}
+.cardEmpty .backhome{
+    color: #288AD6;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #288AD6;
+    margin: 0px 300px;
+    border-radius: 5px;
+}
+.cardEmpty p a{
+    text-decoration: none;
+    color: #288AD6;
+     
+}
+.pd10{
+    padding: 10px;
+}
+/* cartlist  */
+.cardlist{
+    margin: 60px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
+.cardlist .header-cart{
+    background-color: #facc2e ;
+}
+.cardlist h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0px;
+    color: white;
+}
+
+.table-cart{
+    padding: 20px 30px;
+    text-align: center;
+    font-weight: 600;
+}
+.table-cart tbody{
+    padding: 20px 0px;
+}
+
+.table-cart thead{
+    height: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.table-cart thead th{
+    line-height: 40px;
+    font-size: 18px;
+    color:black;
+}

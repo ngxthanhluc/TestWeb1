@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/front-icon/themify-icons/themify-icons.css">
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div id="main">
+        <div style="height:160px;" class="grid container header">
+            <div class="fixed-header">
+                <div class="row header-banner">
+                    <img src="./assets/img/sloganTGDD-removebg-preview.png" alt="" class="col l-12 m-12 c-12">
+                </div>   
+                <div class="grid wide header-top">
+                    <div class="row logo">
+                        <div class="col l-2">
+                            <img src="./assets/img/SEECHANGEIT-removebg-preview.png" alt="">
+                        </div>
+                        <div class="col l-6 input-search">
+                            <input style="font-size:16px;" type="text" placeholder="   Nhập thông tin tìm kiếm...">
+                            <button><i class="ti-search"></i></button>
+                        </div>
+                        <div class="col l-4 sticker-contact">
+                            <div class="row">
+                                <div class="col l-3 icon contact">
+                                    <i class="ti-headphone"></i>
+                                    <span>076-676-676</span>
+                                </div>
+                                <div class="col l-3 icon ">
+                                    <i class="ti-heart"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                                <div class="col l-3 icon js-account ">
+                                    <i class="ti-user"></i>
+                                    <span>Thành viên</span>
+                                </div>
+                                <div class="col l-3 icon ">
+                                    <i class="ti-bag"></i>
+                                    <span>Giỏ hàng</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid wide header-main">
+                    <div class="row main-menu">
+                        <ul class="col l-12 menu">
+                            <li >
+                                <i class="ti-mobile"></i>
+                                <a href="">Điện thoại</a>
+                            </li>
+                            <li>
+                                <i class="ti-desktop"></i>
+                                <a href="">Laptop</a>
+                            </li>
+                            <li>
+                                <i class="ti-tablet"></i>
+                                <a href="">Tablet</a>
+                            </li>
+                            <li>
+                                <i class="ti-headphone"></i>
+                                <a href="">Phu kiện</a>
+                            </li>
+                            <li>
+                                <i class="ti-time"></i>
+                                <a href="">Smartwatch</a>
+                            </li>
+                            <li>
+                                <i class="ti-alarm-clock"></i>
+                                <a href="">Đồng hồ</a>
+                            </li>
+                            <li>
+                                <i class="ti-printer"></i>
+                                <a href="">PC, Máy in</a>
+                            </li>
+                            <li>
+                                <i class="ti-music-alt"></i>
+                                <a href="">Dịch vụ tiện ích</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin:30px 0px ;" class="modal1 login-modal">
+            <div style="height: 600px;" class="grid wide modal-container js-container">
+                <div class="modal-close  js-close">
+                    <i class="ti-close "></i>
+                </div>
+                <div class="modal-header">
+                    <i class="ti-user"></i>
+                    Tài khoản
+                </div>
+                <div class="modal-body input-txt">
+                    <div class="form-input">
+                        <lable class="mgtbt15 tickets"><i class="ti-user"></i> Tên đăng nhập</lable>
+                        <input id="username" class="input username" type="text" placeholder=" Enter user name...">
+                    </div>
+                    <div style="position:relative ;" class="form-input">
+                        <lable class="mgtbt15 tickets"><i class="ti-shield"></i> Mật khẩu</lable>
+                        <input id="password" class="input password" type="password" placeholder=" Enter password..."> <i style="right: 11px;
+                        top: 62px;" class="fas fa-eye" onclick="daoTT()"></i>
+                    </div>
+                    <div style="position:relative ;" class="form-input">
+                        <lable class="mgtbt15 tickets"><i class="ti-email"></i> Email</lable>
+                        <input onkeyup="check(email,regExp)" id="email" class="input email" type="email" placeholder=" Email or user name...">
+                        <div class="icons">
+                            <span class="iconError fas fa-exclamation"></span>
+                            <span class="iconSuccess fas fa-check"></span>
+                         </div>
+                         <div class="error-text">
+                            Xin Hãy Nhập Đúng Định Dạng Email
+                         </div>
+                    </div>
+                    <div class="form-input">
+                        <lable class="mgtbt15 tickets"><i class="ti-mobile"></i> Số điện thoại </lable>
+                        <input onmouseup="checkPhone(phoneNumber)" id="phonenumber" class="input phone" type="text" placeholder=" Enter your phone...">
+                        <div class="icons">
+                            <span class="iconError1 fas fa-exclamation"></span>
+                            <span class="iconSuccess1 fas fa-check"></span>
+                         </div>
+                         <div class="error-text">
+                            Xin Hãy Nhập Đúng Định Dạng Số Điện Thoại
+                         </div>
+                    </div>
+                    <div class="form-input">
+                        <lable class="mgtbt15 tickets"><i class="ti-calendar"></i> Ngày sinh</lable>
+                        <input id="dayofbirth" class="input dayofbirth" type="date" placeholder="">
+                    </div>
+                    <div class="form-input">
+                        <lable class="mgtbt15 tickets"><i class="ti-map-alt"></i> Địa chỉ</lable>
+                        <input id="address" class="input address" type="text" placeholder=" Enter address...">
+                    </div>
+                    <button onclick="signup()" type="submit" style="border-radius:20px ;" class="Login">Tạo tài khoản <i class="ti-check"></i></button>
+                </div>
+                <div class="footer-container">
+                    <span>Bạn đã có tài khoản ?<a  id="btnAgain" class=" js-login-again" href="">Đăng nhập</a></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-wrapper">
+            <div class="grid wide">
+                <div class="row no-gutter flex-container1">
+                    <div class="logo-company">
+                        <img src="./assets/img/SEECHANGEIT-removebg-preview.png" alt="">
+                    </div>
+                    <div class="footer-block-item">
+                        <h3 class="title-block-name">ABOUT</h3>
+                        <a class="footer-link" href="#">Về chúng tôi</a>
+                        <a class="footer-link" href="#">Giới thiệu về đội ngũ</a>
+                        <a class="footer-link" href="#">Tin khuyến mãi</a>
+                        <a class="footer-link" href="#">Liên hệ với chúng tôi </a>
+                    </div>
+                    <div class="footer-block-item">
+                        <h3 class="title-block-name">HỖ TRỢ KHÁCH HÀNG</h3>
+                        <a class="footer-link" href="#">Vận chuyển</a>
+                        <a class="footer-link" href="#">Chính sách hoàn tiền</a>
+                        <a class="footer-link" href="#">Chính sách bảo mật</a>
+                        <a class="footer-link" href="#">Câu hỏi thường gặp </a>
+                        <a class="footer-link" href="#">Hướng dẫn mua hàng</a> </a>
+                    </div>
+                    <div class="footer-block-item">
+                        <h3 class="title-block-name">DANH SÁCH CỬA HÀNG</h3>
+                        <a class="footer-link" href="#">Chi nhánh 1: 567/24/6 Nguyễn Ảnh Thủ Quận 12</a>
+                        <a class="footer-link" href="#">Chi nhánh 2: DT12 Huyện Hóc Môn TP HCM</a>
+                        <a class="footer-link" href="#">Chi nhánh 3: 12/5 Phan Huy Ích Gò Vấp</a>
+                    </div>
+                    <div class="footer-block-item">
+                        <h3 class="title-block-name">KẾT NỐI VỚI CHÚNG TÔI</h3>
+                        <ul class="social-icon">
+                            <li><a href=""><i class="ti-facebook"></i></a></li>
+                            <li><a href=""><i class="ti-yahoo"></i></a></li>
+                            <li><a href=""><i class="ti-linux"></i></a></li>
+                            <li><a href=""><i class="ti-twitter"></i></a></li>
+                            <li><a href=""><i class="ti-github"></i></a></li>
+                            <li><a href=""><i class="ti-skype"></i></a></li>
+                        </ul>
+                        <h3 class="title-block-name">PHƯƠNG THỨC THANH TOÁN</h3>
+                        <ul class="social-icon">
+                            <img src="./assets/img/thanhtoan/306030112_475689787865792_7211577035752885960_n.png" alt="">
+                            <img src="./assets/img/thanhtoan/306384213_653445566161146_8049250959750094039_n.png" alt="">
+                            <img src="./assets/img/thanhtoan/306656473_2046643612213525_1206109434695921241_n.png" alt="">
+                            <img src="./assets/img/thanhtoan/307128801_745367457107380_168764286454011460_n.png" alt="">
+                            <img src="./assets/img/thanhtoan/307850726_810718406810022_1294694950446082846_n.png" alt="">
+                            <img src="./assets/img/thanhtoan/308347136_433682712179150_2915662949912742879_n.png" alt="">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/signup.js"></script>
+</body>
+<script>
+    let btnLogin1 = document.querySelector('.js-login-again')
+    let openModal = document.querySelector('.js-modal')
+    function showModalLogin(){
+        openModal.classList.add('open')
+    }
+    btnLogin1.addEventListener('click',showModalLogin)
+    function daoTT() {
+        var mk = document.getElementById("password");
+        mk.type = (mk.type === "password")? "text":"password";
+    }  
+    
+</script>
+
+</html>
